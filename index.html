@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Post request</title>
+	<link rel="stylesheet" href="./_app/css/main.css">
+	<script type="module" src="./_app/js/main.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Kontaktopplysninger til en fiktiv ny ansatt</h1>
+		<p id="result"></p>
+		<p id="error"></p>
+	</header>
+	<main>
+		<form class="form" id="form">
+			<label 
+				class="form__label"
+				for="firstName">
+				Fornavn
+			</label>
+			<input 
+				type="text" 
+				name="firstName"
+				autocomplete="3ijin33u4"
+				id="firstName"
+				class="form__input">
+			<label
+				class="form__label" 
+				for="lastName">
+				Etternavn
+			</label>
+			<input 
+				type="text" 
+				name="lastName"
+				autocomplete="3ijin33u4"
+				id="lastName"
+				class="form__input">
+			<input 
+				type="radio"
+				id="radio"
+				class="form__radio">
+			<label 
+				for="radio">
+				Mann
+			</label>
+			<input 
+				type="radio"
+				id="radio"
+				class="form__radio">
+			<label 
+				for="radio">
+				Kvinne
+			</label>
+			<label
+				class="form__label" 
+				for="company">
+				Firma
+			</label>
+			<input 
+				type="text" 
+				name="company"
+				id="company"
+				class="form__input">
+			<label
+				class="form__label" 
+				for="email">
+				Epost
+			</label>
+			<input 
+				type="email" 
+				name="email"
+				id="email"
+				class="form__input">
+			<label
+				class="form__label" 
+				for="mobile">
+				Mobilnummer
+			</label>
+			<input 
+				type="tel" 
+				name="Mobilnummer"
+				id="Mobilnummer"
+				class="form__input">
+			<input 
+				type="checkbox"
+				class="form__checkbox"
+				id="checkbox">
+			<label 
+				for="checkbox">
+				Please confirm that you agree to our terms & conditions
+			</label>
+			<input 
+				type="submit"
+				value="send data"
+				class="form__submit">
+		</form>
+	</main>
+</body>
+</html>

@@ -1,0 +1,8 @@
+body, html {
+	background-color: rgb(129, 86, 96);
+	color: white;
+}
+
+h1 {
+	padding: .5rem;
+}

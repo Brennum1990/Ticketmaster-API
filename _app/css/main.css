@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
 @import './reset.css';
+@import './variables.css';
 @import './base.css';
 
-@import './modules/form.css';
+@import './modules/search.css';

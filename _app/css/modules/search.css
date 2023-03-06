@@ -1,0 +1,10 @@
+.search #search {
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	position: fixed;
+	padding: .3rem;
+	font-size: .4rem;
+	border-radius: 10px;
+	width: 35vw;
+}

@@ -1,4 +1,5 @@
 // Ticketmaster-API 
+
 Dette temaet tar for seg API-er og hvordan frontend løsninger opererer i samsvar med disse. Her belyses det hvordan dokumentasjonen til et API kan anvendes til å forstå og implementere kommunikasjonen mellom ulike systemer.
 
 // Contributors

@@ -5,6 +5,7 @@
 	position: fixed;
 	padding: .3rem;
 	font-size: .4rem;
-	border-radius: 10px;
+	border-radius: 5px;
 	width: 35vw;
+	background: var(--third-color);
 }

@@ -3,5 +3,4 @@
 	height: 10vh;
 	background-color: var(--second-color);
 	display: grid;
-	grid-column: 4 / 12;
 }

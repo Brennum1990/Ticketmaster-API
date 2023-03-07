@@ -1,4 +1,4 @@
-.search #search {
+.searchbar {
 	left: 50%;
 	top: 40%;
 	transform: translate(-50%, -50%);
@@ -8,4 +8,26 @@
 	border-radius: 5px;
 	width: 35vw;
 	background: var(--third-color);
+}
+
+.form-element {
+	display: table-cell;
+	box-sizing: border-box;
+}
+ 
+.textfield {
+	width:100%
+}
+ 
+.textfield > input {
+	width:100%
+}
+ 
+form {
+	background: purple;
+	padding:12px;
+}
+ 
+input {
+	padding:10px;
 }

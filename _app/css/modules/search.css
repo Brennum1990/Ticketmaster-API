@@ -3,31 +3,51 @@
 	top: 40%;
 	transform: translate(-50%, -50%);
 	position: fixed;
-	padding: .3rem;
-	font-size: .4rem;
-	border-radius: 5px;
-	width: 35vw;
+	padding: .2rem;
+	border-radius: .1rem;
 	background: var(--third-color);
+	width: 35vw;
+	font-size: .4rem;
 }
 
 .form-element {
 	display: table-cell;
-	box-sizing: border-box;
 }
  
 .textfield {
-	width:100%
+	width:100%;
 }
  
 .textfield > input {
 	width:100%
 }
- 
-form {
-	background: purple;
-	padding:12px;
-}
- 
+
 input {
-	padding:10px;
+	padding: .2rem;
+	font: var(--font-body-text); 
+	font-size: .4rem;
+}
+
+.tagline {
+	left: 50%;
+	top: 32.5%;
+	transform: translate(-50%, -50%);
+	position: fixed;
+	font-size: .8rem;
+	-webkit-text-stroke-width: .5px;
+	-webkit-text-stroke-color: black;
+	background-color: var(--fourth-color); 
+	border-radius: .1rem;
+	padding: .15rem;
+}
+
+@media screen and (min-width: 768px) {
+
+.searchbar {
+
+}
+
+.tagline {
+
+}
 }

@@ -1,26 +1,29 @@
-header {
+.header {
 	width: 100%;
-	height: 67px;
+	height: fit-content;
 	display: grid;
 	grid-column: 1 / 13;
+	background-color: var(--fourth-color); 
+	border-bottom: solid black 2px;
 }
 
-.header-title {
-	font-size: 50px;
+.header__title {
+	font-size: 1rem;
 	text-align: center;
+	font: var(--font-header-text);
 }
 
-.header-button {
-	position: absolute;
-	right: 0px;
-	height: 67px;
-	width: 102px;
+.header__button {
+	position: fixed;
+	right: 0;
+	width: 50vw;
+	text-align: right;
 	background: none;
 	color: inherit;
 	border: none;
-	padding: 0;
+	padding: .3rem;
 	font: inherit;
-	font-size: 30px;
+	font-size: .7rem;
 	cursor: pointer;
 	outline: inherit;
 }

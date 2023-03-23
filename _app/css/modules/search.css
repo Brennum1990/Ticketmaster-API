@@ -10,12 +10,14 @@
 	width: fit-content;
 }
 
-#searchWrapper {
-	display: inline-block;
-}
-
+#searchWrapper,
 #searchButton {
 	display: inline-block;
+	border-radius: .1rem;
+}
+
+#searchBar {
+	width: 40vw;
 }
 
 input {

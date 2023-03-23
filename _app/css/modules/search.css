@@ -1,4 +1,4 @@
-.searchbar {
+.container {
 	left: 50%;
 	top: 40%;
 	transform: translate(-50%, -50%);
@@ -6,20 +6,15 @@
 	padding: .2rem;
 	border-radius: .1rem;
 	background: var(--third-color);
-	width: 35vw;
 	font-size: .4rem;
 }
 
-.form-element {
-	display: table-cell;
+#searchWrapper {
+	display: inline-block;
 }
- 
-.textfield {
-	width:100%;
-}
- 
-.textfield > input {
-	width:100%
+
+#searchButton {
+	display: inline-block;
 }
 
 input {
@@ -39,15 +34,4 @@ input {
 	background-color: var(--fourth-color); 
 	border-radius: .1rem;
 	padding: .15rem;
-}
-
-@media screen and (min-width: 768px) {
-
-.searchbar {
-
-}
-
-.tagline {
-
-}
 }

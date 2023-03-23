@@ -2,16 +2,14 @@
 	width: 100%;
 	height: fit-content;
 	display: grid;
-	grid-column: 1 / 13;
 	background-color: var(--fourth-color); 
-	border-bottom: solid black 2px;
 	position: fixed;
 }
 
 .header__title {
 	font-size: 1rem;
 	text-align: left;
-	margin-left: .3rem;
+	margin-left: .7rem;
 	font: var(--font-header-text);
 }
 
@@ -28,4 +26,14 @@
 	font-size: .7rem;
 	cursor: pointer;
 	outline: inherit;
+}
+
+.tagline {
+	position: fixed;
+	text-align: center;
+	margin-left: 5.7rem;
+	font-size: .7rem;
+	padding: .3rem;
+	-webkit-text-stroke-width: .3px;
+	-webkit-text-stroke-color: black;
 }

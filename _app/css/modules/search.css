@@ -7,6 +7,7 @@
 	border-radius: .1rem;
 	background: var(--third-color);
 	font-size: .4rem;
+	width: fit-content;
 }
 
 #searchWrapper {
@@ -21,17 +22,4 @@ input {
 	padding: .2rem;
 	font: var(--font-body-text); 
 	font-size: .4rem;
-}
-
-.tagline {
-	left: 50%;
-	top: 32.5%;
-	transform: translate(-50%, -50%);
-	position: fixed;
-	font-size: .8rem;
-	-webkit-text-stroke-width: .5px;
-	-webkit-text-stroke-color: black;
-	background-color: var(--fourth-color); 
-	border-radius: .1rem;
-	padding: .15rem;
 }

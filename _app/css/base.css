@@ -8,13 +8,6 @@ body {
 	font-family: "League Gothic";
 }
 
-.layout {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	max-width: 100%;
-	margin-bottom: 1rem;
-}
-
 .bg {
 	background-image: url(../assets/Daft_Punk.jpeg);
 	height: 50vh;

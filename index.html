@@ -8,53 +8,32 @@
 		<script type="module" src="./_app/js/main.js"></script>
 	</head>
 	<body>
-		<div class="layout">
 			<header class="header">
-				<h1 class="header__title">Butts in seats</h1>
+				<h1 class="header__title">Ticketmaster</h1>
 				<button class="header__button">Log in</button>
 			</header>
 			
 			<main>
-				<section class="search">
-					<input 
-					type="search"
-					placeholder="Search by team, artist, event or venue"
-					id="search">
-				</section>
 				<h2 class="tagline">Concerts, festivals, sporting events and more</h2>	
-				<form class="searchbar">
-					<div class="form-element textfield">
-						<input 
-						type="text"
-						placeholder="Search by team, artist, event or venue">
-					</div>
-					<div class="form-element submit-btn">
-						<input 
-						type="submit"
-						value="Search">
-					</div>
-				</form>
-
+				
 				<div class="container">
-						<p>Top Categories</p>
-						<div class="container__categories">
-							<div class="container__box"></div>
-							<div class="container__box"></div>
-							<div class="container__box"></div>
-							<div class="container__box"></div>
+					<div id="searchWrapper">
+						<input 
+							type="text"
+							id="searchBar"
+							name="searchBar"
+							placeholder="Search by team, artist, event or venue">
+						<div id="searchButton">
+							<input 
+							type="submit"
+							value="Search">
 						</div>
-						<p>Top Tours</p>
-						<div class="container__tours">
-							<div class="container__box"></div>
-							<div class="container__box"></div>
-							<div class="container__box"></div>
-							<div class="container__box"></div>
-
-						</div>
+					</div>
+					<ul id="eventsList"></ul>
 				</div>
 			
-				
 			</main>
+
 			<footer>
 				<section class="footer">
 
@@ -62,6 +41,5 @@
 
 				<div class="bg"></div>
 			</footer>
-		</div>
 	</body>
 	</html>

@@ -15,10 +15,9 @@ export default async function search() {
 		displayEvents(filteredEvents);
 	});
 
-	const displayEvents = (events) => {
-		const htmlString = events
+	function displayEvents() {
+		const htmlString = event
 			.map((event) => {
-				return 
 				`<li class="events">
 					<h2>${_embedded.events.name}</h2>
 					<p>${_embedded.events.url}</p>

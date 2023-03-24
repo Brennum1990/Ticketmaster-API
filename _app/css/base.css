@@ -1,7 +1,7 @@
 html {
 	background-color: var(--background-color-dark);
 	color: var(--first-color);
-	font-size: 4.5vw;
+	font-size: 5vw;
 }
 
 body {
@@ -19,4 +19,16 @@ body {
 	z-index: -1;
 	top: 0;
 	left: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+	html {
+	  font-size: 4vw;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	html {
+	  font-size: 3vw;
+	}
 }

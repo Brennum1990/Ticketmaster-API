@@ -9,7 +9,7 @@
 .header__title {
 	font-size: 1rem;
 	text-align: left;
-	margin-left: .7rem;
+	margin-left: .5rem;
 	font: var(--font-header-text);
 }
 
@@ -28,12 +28,14 @@
 	outline: inherit;
 }
 
+.header__button:hover {
+	color: var(--third-color);
+}
+
 .tagline {
 	position: fixed;
 	text-align: center;
 	margin-left: 5.7rem;
 	font-size: .7rem;
 	padding: .3rem;
-	-webkit-text-stroke-width: .3px;
-	-webkit-text-stroke-color: black;
 }

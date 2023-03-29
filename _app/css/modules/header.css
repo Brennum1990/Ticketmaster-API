@@ -11,17 +11,18 @@
 	text-align: left;
 	margin-left: .5rem;
 	font: var(--font-header-text);
+	-webkit-text-stroke: 1px var(--second-color);
 }
 
 .header__button {
 	position: fixed;
 	right: 0;
-	width: 50vw;
+	width: fit-content;
 	text-align: right;
-	background: none;
-	color: inherit;
+	background: var(--background-color-dark);
+	color: white;
+	padding: .23rem;
 	border: none;
-	padding: .3rem;
 	font: inherit;
 	font-size: .7rem;
 	cursor: pointer;
@@ -29,7 +30,7 @@
 }
 
 .header__button:hover {
-	color: var(--third-color);
+	background: var(--third-color);
 }
 
 .tagline {

@@ -1,11 +1,7 @@
-// import fetchStations from "./modules/fetchEvents.js";
-// import renderList from "./modules/renderList.js";
 // import fetchCharacters from "./modules/fetchCharacters.js";
-import fetchEvents from "./modules/fetch.js";
-// import search from "./modules/search.js";
+import fetchEvents from "./modules/fetchEvents.js";
+import renderEvents from "./modules/renderEvents.js";
 
-// fetchStations()
-// renderList()
 // fetchCharacters()
 fetchEvents()
-// search()
+// renderEvents()

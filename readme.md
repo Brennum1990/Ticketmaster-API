@@ -4,9 +4,9 @@ This topic is about API and how it works in unison with frontend solutions. It w
 
 * Contributors
 
-Olve Bulling Johansen
-Stian André Olsen
-Øyvind Vøllo Brennum 
+- Olve Bulling Johansen
+- Stian André Olsen
+- Øyvind Vøllo Brennum 
 
 * Repository 
 

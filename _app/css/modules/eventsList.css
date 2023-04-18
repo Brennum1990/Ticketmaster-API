@@ -1,3 +1,4 @@
-#eventsList {
-	margin: auto;
+#eventList {
+	display: grid;
+	grid-template-columns: 3rem 3rem 3rem;
 }

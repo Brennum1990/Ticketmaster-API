@@ -4,8 +4,7 @@
 @import './reset.css';
 @import './variables.css';
 @import './base.css';
-@import './modules/header.css';
 
+@import './modules/header.css';
 @import './modules/search.css';
-@import './modules/containers.css';
-@import './modules/eventsList.css';
+@import './modules/events.css';

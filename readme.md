@@ -12,7 +12,6 @@ This topic is about API and how it works in unison with frontend solutions. It w
 
 https://github.com/Brennum1990/Ticketmaster-API
 
-
 * Roadmap 
 
 https://github.com/users/Brennum1990/projects/1/views/1
@@ -28,10 +27,16 @@ https://github.com/users/Brennum1990/projects/1/views/1
 - Create search.js(a javascript file that enables the searchbar to function with Ticketmasters API)
 - Stylize eventList in CSS
 
+* Video references
+
+JavaScript Fetch API || Fetch data from API and display data into browser - Step by Step
 https://www.youtube.com/watch?v=m_vL25vzpiE
 
+Fetch API & Rendering Data with JavaScript - Code Bushi
 https://www.youtube.com/watch?v=FN_ffvw_ksE
 
+Callbacks, Promises, Async Await | JavaScript Fetch API Explained - Dave Gray
 https://www.youtube.com/watch?v=VmQ6dHvnKIM
 
+JavaScript Search Bar - James Q Quick
 https://www.youtube.com/watch?v=wxz5vJ1BWrc&t=2s

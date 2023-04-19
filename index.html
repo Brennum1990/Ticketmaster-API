@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	<html lang="en">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
@@ -7,40 +7,38 @@
 		<link rel="stylesheet" href="./_app/css/main.css">
 		<script type="module" src="./_app/js/main.js"></script>
 	</head>
+
 	<body>
-			<header class="header">
-				<h1 class="header__title">Ticketmaster</h1>
-				<h2 class="tagline">- Concerts, festivals, sporting events and more</h2>	
-				<button class="header__button">Log in</button>
-			</header>
-			
-			<main>
-				
-				<div class="container">
-					<div id="searchWrapper">
+		<header class="header">
+			<h1 class="header__title">Ticketmaster</h1>
+			<h2 class="tagline">- Concerts, festivals, sporting events and more</h2>	
+			<button class="header__button">Log in</button>
+		</header>
+		
+		<main>
+			<div class="search__container">
+				<div id="searchWrapper">
+					<input 
+						type="text"
+						id="searchBar"
+						name="searchBar"
+						placeholder="Search by team, artist, event or venue">
+					<div id="searchButton">
 						<input 
-							type="text"
-							id="searchBar"
-							name="searchBar"
-							placeholder="Search by team, artist, event or venue">
-						<div id="searchButton">
-							<input 
 							type="submit"
 							id="submitBtn"
 							value="Search">
-						</div>
 					</div>
-					<ul id="eventList"></ul>
 				</div>
-			
-			</main>
+			</div>
+			<div class="events__container"></div>
+		</main>
 
-			<footer>
-				<section class="footer">
+		<footer>
+			<section class="footer">
+			</section>
 
-				</section>
-
-				<div class="bg"></div>
-			</footer>
-	</body>
-	</html>
+			<div class="bg"></div>
+		</footer>
+	</body>	
+</html>

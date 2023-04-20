@@ -40,3 +40,6 @@ https://www.youtube.com/watch?v=VmQ6dHvnKIM
 
 JavaScript Search Bar - James Q Quick
 https://www.youtube.com/watch?v=wxz5vJ1BWrc&t=2s
+
+Fetching and Rendering API Data in JavaScript - Jammin' Coder
+https://www.youtube.com/watch?v=vBdZVhxQpco

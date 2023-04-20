@@ -1,15 +1,17 @@
 import { apiKey } from "../env.js";
+import displayEvents from "./displayEvents.js";
 
 export default async function fetchEvents() {
     const baseUrl = 'https://app.ticketmaster.com/discovery/v2';
-    const size = '200';
+    const size = '20';
     const options = {
         method: 'GET',
     }; 
 
     // Fetching API
-    const endpoint = `${baseUrl}/events?apikey=${apiKey}&size=${size}`;
+    const endpoint = `${baseUrl}/events?apikey=${apiKey}&size=${size}&city=Denver`;
     const response = await fetch(endpoint, options)
+        console.log(response);
         try {
             const ticketMasterEvents = await handleResponse(response);
             return ticketMasterEvents;
@@ -21,8 +23,12 @@ export default async function fetchEvents() {
     // Response - if ok = result
     async function handleResponse(response) {
         if(response.ok) {
-            const result = await response.json();
+            const result = await response.json(); // Extracting result as a JSON Object from the response
                 console.log(result)
+            const eventList = result._embedded.events;
+            eventList.forEach(event => { 
+                displayEvents(event);   // Import list 
+            });
 
     // Response - if not ok = Error         
             } else if (response.status === 404) {
@@ -40,41 +46,4 @@ export default async function fetchEvents() {
         warningElement.classList.toggle('hidden');
         warningElement.textContent = error;
     }
-
-        // const eventName = document.createElement('h2');
-
-        // eventName.className = 'event__name';
-
-        // AllEvents.forEach(events => {
-        //     const liElement = document.createElement('li');
-        //     liElement.textContent = `
-        //     <h1>${_embedded.events.name}</h1>
-        //     `;
-        // // eventContainer.insertAdjacentHTML('afterbegin', html);
-        // ulElement.appendChild(liElement);
-        // })
-   
-
-    // Rendering eventitems to HTML
-    // const eventList = document.getElementById('eventList');
-    // document.querySelector('eventList').innerText = result
-    // result(ticketMasterEvents);
-    // let ticketMasterEvents = [];
-    
-    // const renderEvents = (allEvents) => {
-    //     const htmlString = allEvents
-    //         .map((events) => {
-    //             return `
-    //                 <li class="events">
-    //                 <h1>${events.name}</h1>
-    //                 <img src="${events.images}"></img>
-    //                 <p>${events.type}</p>
-    //                 <p>${events.dates}</p>
-    //                 <p>${events._embedded.venues}</p>
-    //                 </li>`;
-    //             })
-    //             .join('');
-    //         eventList.innerHTML = htmlString;
-    //     };
-    //     renderEvents();
 }

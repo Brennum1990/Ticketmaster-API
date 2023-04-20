@@ -1,30 +1,28 @@
 .header {
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
 	width: 100%;
 	height: fit-content;
-	display: grid;
 	background-color: var(--fourth-color); 
-	position: fixed;
 }
 
 .header__title {
-	font-size: 1rem;
+	position: relative;
 	text-align: left;
 	margin-left: .5rem;
-	font: var(--font-header-text);
-	-webkit-text-stroke: 1px var(--second-color);
+	font: var(--font-Bold);
+	font-weight: 700;
 }
 
 .header__button {
-	position: fixed;
-	right: 0;
 	width: fit-content;
-	text-align: right;
-	background: var(--background-color-dark);
 	color: white;
-	padding: .23rem;
+	background: none;
+	padding: .330rem;
 	border: none;
-	font: inherit;
-	font-size: .7rem;
+	font-weight: 700;
+	font: var(--small-font-Bold);
 	cursor: pointer;
 	outline: inherit;
 }
@@ -35,9 +33,20 @@
 }
 
 .tagline {
-	position: fixed;
+	position: relative;
 	text-align: center;
-	margin-left: 5.7rem;
-	font-size: .7rem;
-	padding: .3rem;
+	font: var(--small-font-CondensedMedium);
+	margin: .5rem 4rem 0 .5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+	.tagline {
+		margin: .5rem 2rem 0 .5rem;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.tagline {
+		margin: .5rem 2rem 0 .5rem;
+	}
 }

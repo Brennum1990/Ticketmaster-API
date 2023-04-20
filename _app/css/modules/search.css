@@ -1,14 +1,15 @@
 .search__container {
 	left: 50%;
-	top: 40%;
+	top: 45%;
 	transform: translate(-50%, -50%);
 	position: fixed;
 	padding: .2rem;
 	border-radius: .1rem;
-	border: solid .03rem rgba(0, 0, 0, .6);
-	background: var(--third-color);
+	border: solid .03rem var(--fourth-color);
+	background: var(--second-color);
 	font-size: .4rem;
-	width: fit-content;
+	width: 50%;
+	margin-bottom: 10rem;
 }
 
 #searchWrapper,
@@ -27,6 +28,50 @@
 
 input {
 	padding: .2rem;
-	font: var(--font-body-text); 
+	font: var(--font-CondensedMedium); 
 	font-size: .4rem;
+}
+
+@media only screen and (max-width: 768px) {
+	input {
+		padding: .4rem;
+	  	font-size: .6rem;
+	}
+
+	.search__container {
+		width: 73.5%;
+		padding: .3rem;
+	}
+
+	#searchBar {
+		width: 60vw;
+	}
+	
+}
+
+@media only screen and (min-width: 1200px) {
+	.search__container {
+		width: 50%;
+	}
+
+	#searchBar {
+		width: 42.25vw;
+	}
+	
+}
+
+@media only screen and (min-width: 1800px) {
+	input {
+		padding: .2rem;
+	  	font-size: .4rem;
+	}
+
+	.search__container {
+		width: 40%;
+		padding: .2rem;
+	}
+
+	#searchBar {
+		width: 34.25vw;
+	}
 }

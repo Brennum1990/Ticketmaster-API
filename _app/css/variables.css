@@ -1,10 +1,14 @@
 :root {
+	/* Colors */
 	--first-color: #ffffff;
-	--second-color: #000000;
-	--third-color: #C2C0D8;
-	--fourth-color: rgba(46, 46, 46, 0.5);
-	--background-color-dark: #333333;
+	--second-color: #E3F3F3;
+	--third-color: #5F6CA0;
+	--fourth-color: #1C1C1C;
 
-	--font-body-text: 1rem 'League Gothic';
-	--font-header-text: 1rem 'Chewy';
+	/* Fonts */
+	--font-CondensedMedium: 1rem 'Futura-CondensedMedium';
+	--font-Bold: 1rem 'Futura';
+
+	--small-font-CondensedMedium: .5rem 'Futura-CondensedMedium';
+	--small-font-Bold: .5rem 'Futura';
 }

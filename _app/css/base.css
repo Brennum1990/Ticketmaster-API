@@ -1,24 +1,26 @@
 html {
-	background-color: var(--background-color-dark);
+	background-color: var(--second-color);
 	color: var(--first-color);
 	font-size: 5vw;
 }
 
-body {
-	font-family: "League Gothic";
-}
-
 .bg {
-	background-image: url(../assets/Daft_Punk.jpeg);
+	background-image: url(../assets/city_skyline.jpeg);
 	height: 50vh;
 	width: 100vw;
 	background-position: center;	
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: fixed;
+	position: sticky;
 	z-index: -1;
 	top: 0;
 	left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	html {
+	  font-size: 4.5vw;
+	}
 }
 
 @media only screen and (min-width: 1200px) {

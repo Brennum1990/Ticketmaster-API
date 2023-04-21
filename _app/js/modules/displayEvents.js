@@ -3,16 +3,19 @@ export default async function displayEvents(event) {
     
     // Creating elements
     const eventCard = document.createElement('div');
-    const eventImageFrame = document.createElement('div');
+        const eventImageFrame = document.createElement('div');
+            const eventImage = document.createElement("img");
+    
     const eventInfo = document.createElement('div');
-    const eventName = document.createElement('h1');
-    const eventImage = document.createElement('img');
-    const eventVenue = document.createElement('h3');
-    const eventCity = document.createElement('h3');
+        const eventName = document.createElement('h1');
+        const eventVenue = document.createElement('h3');
+        const eventCity = document.createElement('h3');
 
     // Rendering elements 
     eventName.innerHTML = event.name; 
-    eventImage.innerHTML = event.images[0];
+    eventImageFrame.innerHTML = '';
+    eventImage.src = event?.images[0].url;
+    eventImage.setAttribute('alt', `'${event.name}'`);
     eventVenue.innerText = event._embedded.venues[0].name;
     eventCity.innerText = event._embedded.venues[0].city.name; 
 

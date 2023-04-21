@@ -1,6 +1,8 @@
 import { apiKey } from "../env.js";
 import displayEvents from "./displayEvents.js";
 
+const warningElement = document.querySelector('.warning');
+
 export default async function fetchEvents() {
     const baseUrl = 'https://app.ticketmaster.com/discovery/v2';
     const size = '20';
@@ -27,7 +29,7 @@ export default async function fetchEvents() {
                 console.log(result)
             const eventList = result._embedded.events;
             eventList.forEach(event => { 
-                displayEvents(event);   // Import list 
+                displayEvents(event)   // Import list 
             });
 
     // Response - if not ok = Error         

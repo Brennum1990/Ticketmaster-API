@@ -8,8 +8,8 @@
 	border: solid .03rem var(--fourth-color);
 	background: var(--second-color);
 	font-size: .4rem;
-	width: 50%;
-	margin-bottom: 10rem;
+	width: fit-content;
+	z-index: 1;
 }
 
 #searchWrapper,
@@ -30,48 +30,28 @@ input {
 	padding: .2rem;
 	font: var(--font-CondensedMedium); 
 	font-size: .4rem;
+	border-radius: .1rem;
+	border: 1px solid var(--fourth-color);
+}
+
+input[type=text]:focus {
+	border: 3px solid var(--third-color);
+}
+
+input[type=submit]:focus {
+	border: 3px solid var(--third-color);
 }
 
 @media only screen and (max-width: 768px) {
 	input {
+	  	font-size: .8rem;
+	}
+
+	.search__container {
 		padding: .4rem;
-	  	font-size: .6rem;
-	}
-
-	.search__container {
-		width: 73.5%;
-		padding: .3rem;
 	}
 
 	#searchBar {
-		width: 60vw;
-	}
-	
-}
-
-@media only screen and (min-width: 1200px) {
-	.search__container {
-		width: 50%;
-	}
-
-	#searchBar {
-		width: 42.25vw;
-	}
-	
-}
-
-@media only screen and (min-width: 1800px) {
-	input {
-		padding: .2rem;
-	  	font-size: .4rem;
-	}
-
-	.search__container {
-		width: 40%;
-		padding: .2rem;
-	}
-
-	#searchBar {
-		width: 34.25vw;
+		width: 35vw;
 	}
 }

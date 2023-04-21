@@ -16,14 +16,48 @@
 	border-radius: .1rem;
 	margin: .2rem;
 	padding: .2rem;
-	max-width: 5rem;
 	font: var(--small-font-CondensedMedium);
-	overflow: hidden; 
+	overflow: visible; 
+	cursor: pointer;
+	width: 30vw;
+	height: 40vh;
+}
+
+.event__card:hover {
+	box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+	transition: all 0.2s ease-in-out;
+	transition-delay: 0.1s;
+	transform: scale(1.02);
+}
+
+.event__image-frame {
+	background-position: center;	
+	background-repeat: no-repeat;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+}
+
+.event__image {
+	height: 100%;
+	border-radius: .1rem;
 }
 
 .event__name {
 	font-size: .3rem;
 } 
+
+.warning {
+	background-color: firebrick;
+	font: var(--font-CondensedMedium);
+	font-size: .5rem;
+	padding: .3rem;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
 
 @media only screen and (min-width: 1200px) {
 	.events {

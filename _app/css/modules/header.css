@@ -13,14 +13,24 @@
 	margin-left: .5rem;
 	font: var(--font-Bold);
 	font-weight: 700;
+	cursor: pointer;
+	color: white;
+	background: none;
+	border: none;
+}
+
+.header__title:hover {
+	transition: all 0.2s ease-in-out;
+	transition-delay: 0.1s;
+	transform: scale(1.02);
 }
 
 .header__button {
 	width: fit-content;
 	color: white;
 	background: none;
-	padding: .330rem;
 	border: none;
+	padding: .330rem;
 	font-weight: 700;
 	font: var(--small-font-Bold);
 	cursor: pointer;
@@ -37,12 +47,6 @@
 	text-align: center;
 	font: var(--small-font-CondensedMedium);
 	margin: .5rem 4rem 0 .5rem;
-}
-
-@media only screen and (max-width: 1200px) {
-	.tagline {
-		margin: .5rem 2rem 0 .5rem;
-	}
 }
 
 @media only screen and (max-width: 1200px) {

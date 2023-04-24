@@ -32,6 +32,7 @@ input {
 	font-size: .4rem;
 	border-radius: .1rem;
 	border: 1px solid var(--fourth-color);
+	outline: none;
 }
 
 input[type=text]:focus {

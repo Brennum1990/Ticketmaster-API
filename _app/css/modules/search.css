@@ -19,7 +19,7 @@
 }
 
 #searchBar {
-	width: 40vw;
+	width: 35vw;
 }
 
 #submitBtn {
@@ -45,14 +45,10 @@ input[type=submit]:focus {
 
 @media only screen and (max-width: 768px) {
 	input {
-	  	font-size: .8rem;
+	  	font-size: .6rem;
 	}
 
 	.search__container {
 		padding: .4rem;
-	}
-
-	#searchBar {
-		width: 35vw;
 	}
 }

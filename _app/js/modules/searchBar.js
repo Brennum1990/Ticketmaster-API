@@ -21,3 +21,33 @@
 
         // });
         // console.log(AllEvents);
+export default async function searchBar() {
+   const searchInput = document.getElementById('searchBar');
+   searchInput.addEventListener('keyup', handleSearchInput());
+   let newarray = [];
+   
+   function handleSearchInput() {
+        const search = this.searchValue.toLowerCase();
+        newarray = array.filter(function(event) {
+                if(event.name.includes(search) || 
+                event.venue.includes(search) || 
+                event.city.includes(search));
+                return newarray;
+                })
+            console.log(newarray);
+
+    const searchButton = document.getElementById('submitBtn');
+    searchButton.addEventListener('click', handleSearchButton);
+    
+    function handleSearchButton() {
+        let buttons = document.querySelector('searchValue');
+                buttons.forEach((button) => {
+        if (value.toUppercase() == button.innerText.toUppercase()) {
+                button.classList.add('active');
+                    }
+        else {
+                button.classList.remove('active'); 
+                    }
+                })
+        }}
+}

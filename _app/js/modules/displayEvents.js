@@ -2,7 +2,7 @@ export default async function displayEvents(events) {
     const eventContainer = document.querySelector('.events');
     
     // Creating elements
-    const eventCard = document.createElement('div');
+    const eventCard = document.createElement('a');
         const eventImageFrame = document.createElement('div');
             const eventImage = document.createElement('img');
     const eventInfo = document.createElement('div');
@@ -13,6 +13,7 @@ export default async function displayEvents(events) {
         const eventStartTime = document.createElement('p');
 
     // Rendering elements 
+    eventCard.src = url(`${events.url}'`); 
     eventName.innerText = events.name;
     eventImageFrame.innerHTML = '';
     eventImage.src = events?.images[0].url;

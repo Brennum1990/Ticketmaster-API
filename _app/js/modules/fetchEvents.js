@@ -11,7 +11,7 @@ export default async function fetchEvents() {
     }; 
 
     // Fetching API
-    const endpoint = `${baseUrl}/events?apikey=${apiKey}&size=${size}&city=Denver`;
+    const endpoint = `${baseUrl}/events?apikey=${apiKey}&size=${size}&countryCode=US`;
     const response = await fetch(endpoint, options)
         try {
             const ticketMasterEvents = await handleResponse(response);
@@ -29,7 +29,7 @@ export default async function fetchEvents() {
             console.log(result)
             const eventList = result._embedded.events;
             eventList.forEach(event => { 
-                displayEvents(event)  
+                displayEvents(event)
             });
 
     // Error         
@@ -53,20 +53,10 @@ export default async function fetchEvents() {
     }
 }
 
-// const searchInput = document.getElementById('searchBar');
-// const searchButton = document.getElementById('submitBtn');
-
-// searchInput.addEventListener('input', handleSearchInput);
-// searchButton.addEventListener('click', handleSearchButton);
-
-// let allEvents = [];
-
 // function handleSearchInput() {
-//     const searchValue = searchInput.value.toLowerCase();
-//     allEvents = allEvents.filter(event => {
-//     const eventTitle = event.name.toLowerCase();
-    
-//     return eventTitle.includes(searchValue)
-//    })
-//    console.log(searchValue);
+// const { results } = eventList
+// const filteredArray = results
+//     .filter(event => event.name)
+//     .filter(event => event.city);
+// console.log(filteredArray)
 // }

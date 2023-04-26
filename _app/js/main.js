@@ -1,7 +1,7 @@
 import fetchEvents from "./modules/fetchEvents.js";
-import displayEvents from "./modules/displayEvents.js";
-import searchBar from "./modules/searchBar.js";
+import displayEvents from './modules/displayEvents.js';
+import filterEvents from './modules/filterEvents.js';
 
 fetchEvents()
 displayEvents()
-searchBar()
+filterEvents()

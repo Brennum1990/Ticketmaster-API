@@ -13,7 +13,8 @@ export default async function displayEvents(events) {
         const eventStartTime = document.createElement('p');
 
     // Rendering elements 
-    eventCard.src = url(`${events.url}'`); 
+    eventCard.href = (`${events.url}`);
+    eventCard.setAttribute('target', '_blank'); 
     eventName.innerText = events.name;
     eventImageFrame.innerHTML = '';
     eventImage.src = events?.images[0].url;

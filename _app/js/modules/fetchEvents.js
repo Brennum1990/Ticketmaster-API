@@ -1,17 +1,23 @@
 import { apiKey } from "../env.js";
 import displayEvents from "./displayEvents.js";
 
-export default async function fetchEvents() {
-
+export default async function fetchEvents(type, searchString) {
+    
+    const warningElement = document.querySelector('.warning');
+     
     // API-parameters 
     const baseUrl = 'https://app.ticketmaster.com/discovery/v2';
-    const size = '50';
+    const size = '25';
     const options = {
         method: 'GET',
     }; 
 
     // Fetching API
-    const endpoint = `${baseUrl}/events?apikey=${apiKey}&size=${size}&countryCode=US`;
+    let endpoint = `${baseUrl}/events?apikey=${apiKey}&size=${size}&countryCode=US`;
+    if(type === 'search') {
+        endpoint = `${baseUrl}/events?apikey=${apiKey}&size=50&countryCode=US&keyword=${searchString}`;
+    }
+    
     const response = await fetch(endpoint, options)
         try {
             const ticketMasterEvents = await handleResponse(response);
@@ -44,19 +50,9 @@ export default async function fetchEvents() {
             }
         }
 
-    // Displays a warning containing the error 
-    const warningElement = document.querySelector('.warning');
-
+    // Displays a warning containing the error
     function handleError(error) {
         warningElement.classList.toggle('hidden');
         warningElement.textContent = error;
     }
 }
-
-// function handleSearchInput() {
-// const { results } = eventList
-// const filteredArray = results
-//     .filter(event => event.name)
-//     .filter(event => event.city);
-// console.log(filteredArray)
-// }

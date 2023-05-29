@@ -1,0 +1,13 @@
+.footer {
+	width: 100%;
+	height: fit-content;
+	position: fixed;
+	background-color: var(--fourth-color);
+	font: var(--small-font-Bold); 
+	bottom: 0;
+}
+
+.footer__text {
+	padding: .2rem;
+	font-size: .4rem;
+}

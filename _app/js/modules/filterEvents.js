@@ -18,20 +18,5 @@ export default async function filterEvents() {
 			fetchEvents('search', searchString);
 		}
 	})
-
-	const searchButton = document.getElementById('submitBtn');
-	searchButton.addEventListener('click', handleSearchButton);
-	
-	function handleSearchButton() {
-		let buttons = document.querySelector('Search');
-			buttons.forEach((button) => {
-		if (value.toLowercase() == button.innerText.toLowercase()) {
-			button.classList.add('active');
-			}
-		else {
-			button.classList.remove('active'); 
-			}
-		})
-	}
 }
 

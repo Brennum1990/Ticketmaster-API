@@ -15,10 +15,10 @@ export default async function displayEvents(events) {
     // Rendering elements 
     eventCard.href = (`${events.url}`);
     eventCard.setAttribute('target', '_blank'); 
+    eventCard.setAttribute('alt', `'${events.name}'`);
     eventName.innerText = events.name;
     eventImageFrame.innerHTML = '';
     eventImage.src = events?.images[0].url;
-    eventImage.setAttribute('alt', `'${events.name}'`);
     eventVenue.innerText = events._embedded.venues[0].name;
     eventCity.innerText = events._embedded.venues[0].city.name;
     eventStartDate.innerText = events.dates.start.localDate;
